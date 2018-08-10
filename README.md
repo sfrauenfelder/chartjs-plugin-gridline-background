@@ -106,6 +106,3 @@ options: {
 }
 </pre>
 
-
-The option backgroundColorRepeat: true makes the plugin repeat the sepcified background colors. If set to false in this example, it would only color the first two gridline backgrounds.
-
