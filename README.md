@@ -13,7 +13,7 @@ Download and save in your project. I don't have a minified version, and it's jus
 Include into your html, after Chart.js.
 
 <h2>Configuration</h2>
-The plugin has two settings, which should be given under the gridLines (under each scale, just like the gridline foreground color):
+The plugin has two settings, which should be given under the gridLines, in turn under each scale, just like the gridline foreground color. See <a href="http://www.chartjs.org/docs/latest/axes/styling.html#grid-line-configuration">here</a>.
 <table>
 <thead>
 <tr>
@@ -28,10 +28,8 @@ The plugin has two settings, which should be given under the gridLines (under ea
 <td><code>backgroundColor</code></td>
 <td><code>Color/Color[]</code></td>
 <td><code>'rgba(0, 0, 0, 0.0)'</code></td>
-<td>The color of the space between this grid line and the next.
-   If specified as an array, the first color applies to the first grid line, the second to the second grid line and so on.
-   As a string (single color), all gridline background will be colored with this color.
-   </td>
+<td>The color of the space between this grid line and the next. More details below the table.
+</td>
 </tr>
 <tr>
 <td><code>backgroundColorRepeat</code></td>
@@ -42,7 +40,53 @@ The plugin has two settings, which should be given under the gridLines (under ea
 </tr>
  </tbody>
 </table>
-By default, the plugin will not render anything visible.
+Detailed explanation of settings:
+<table>
+   <thead>
+      <tr>
+         <th>
+            backgroundColor
+         </th>
+         <th colspan=2>
+            backgroundColorRepeat
+         </th>
+      </tr>
+     <tr>
+      <th></th>
+      <th>false</th>
+      <th>true</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>
+            &lt;not set&gt;
+         </td>
+         <td colspan=2>
+            By default, i.e. if you specify no settings, the plugin will not render anything visible.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            Single color (string)
+         </td>
+         <td colspan=2>
+            If for an axis, under gridlines, you specify a string (single color), all gridline backgrounds for that axis will be colored with that color. The backgroundColorRepeat has no influence in this case.
+         </td>
+      </tr>
+      <tr>
+         <td>
+            List of colors (array)
+         </td>
+         <td>
+            The first color applies to the first grid line background, the second to the second grid line background and so on. If there are not enough colors, remaining backgrounds will be left empty.
+         </td>
+         <td>
+            The first color applies to the first grid line background, the second to the second grid line background and so on, until there are no more colors; then we repeat the colors from the first.
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <strong>Note:</strong> for y axes, you have to specify colors from top to bottom, because that's the order in which gridlines are drawn. That's how it works for the gridline foreground colors, and I have followed that for the background colors.
 
