@@ -3,11 +3,11 @@
 Plugin for <a href="http://www.chartjs.org/">Chart.js</a> to display colored backgrounds per gridline.
 
 This plugin fills the background of each gridline with configurable colors. Actually, it fills each space _between_ two gridlines.
-The gridlines already had configurable foreground colors, and this plugin completes that function.
+The gridlines already had configurable foreground colors, and this plugin completes that function with background colors.
 
 <img src="https://rawgit.com/sfrauenfelder/chartjs-plugin-gridline-background/master/demo-picture.png" style="width:200px;">
 
-Tested with Chart.js 2.7.2, and only with linear, time and category axes. Might work with logarithmic. Expected to fail with other type axes.
+<strong>Tested with</strong> Chart.js 2.7.2, and only with linear, time and category axes. Might work with logarithmic. Expected to fail with other type axes.
 <h2>Installation</h2>
 Download and save in your project. I don't have a minified version, and it's just one file.
 Include into your html, after Chart.js.
@@ -71,7 +71,7 @@ Detailed explanation of settings:
             Single color (string)
          </td>
          <td colspan=2>
-            If for an axis, under gridlines, you specify a string (single color), all gridline backgrounds for that axis will be colored with that color. The backgroundColorRepeat has no influence in this case.
+            All gridline backgrounds for that axis will be colored with that color. The backgroundColorRepeat has no influence in this case.
          </td>
       </tr>
       <tr>
