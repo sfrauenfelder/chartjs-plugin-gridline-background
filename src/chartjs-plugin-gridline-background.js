@@ -45,6 +45,10 @@ const plugin = {
 		//			}
 		//		}
 	
+		const ctx = chartInstance.chart.ctx;
+		const canvas = chartInstance.chart.canvas;
+		const chartArea = chartInstance.chartArea;
+
 		var scale;
 		var si;
 		var ti;
