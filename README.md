@@ -71,7 +71,7 @@ Detailed explanation of settings:
             Single color (string)
          </td>
          <td colspan=2>
-            All gridline backgrounds for that axis will be colored with that color. The backgroundColorRepeat has no influence in this case.
+            All gridline backgrounds for that axis will be colored with that color. The backgroundColorRepeat has no effect in this case.
          </td>
       </tr>
       <tr>
@@ -88,8 +88,8 @@ Detailed explanation of settings:
    </tbody>
 </table>
 
-<strong>Note:</strong> for y axes, you have to specify colors from top to bottom, because that's the order in which gridlines are drawn. That's how it works for the gridline foreground colors, and I have followed that for the background colors.
-
+<strong>Note:</strong> For y axes, you have to specify colors from top to bottom, because that's the order in which gridlines are drawn. That's how it works for the gridline foreground colors, and I have followed that for the background colors.
+<strong>Note:</strong> If you use opaque (not transparent) colors, only the last drawn colors will be visible, as they are drawn over any previous colors, which are then hidden.
 <h2>Example</h2>
 The following example would give you alternating grey and white background for an x-axis:
 
