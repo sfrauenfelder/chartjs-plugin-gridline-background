@@ -98,7 +98,7 @@ options: {
    scales: {
       xAxes: [{
          gridLines: {
-            backgroundColor: [ 'grey', 'white' ],
+            backgroundColor: [ 'lightgrey', 'white' ],
             backgroundColorRepeat: true
          }
       }]
