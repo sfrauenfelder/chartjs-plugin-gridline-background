@@ -6,7 +6,8 @@ This plugin fills the background of each gridline with configurable colors. Actu
 The gridlines already had configurable foreground colors, and this plugin completes that function with background colors.
 
 <img src="https://rawgit.com/sfrauenfelder/chartjs-plugin-gridline-background/master/demo-picture-all.png" style="width:200px;">
-
+<a href=https://jsfiddle.net/sfrauenfelder/734L2w5h/>fiddle-rainbow</a>
+<a href="https://jsfiddle.net/sfrauenfelder/h2pgx1o6/4/">fiddle-grey-white</a>
 <strong>Tested with</strong> Chart.js 2.7.2, and only with linear, time and category axes. Might work with logarithmic. Expected to fail with other type axes.
 <h2>Installation</h2>
 Download and save in your project. I don't have a minified version, and it's just one file.
