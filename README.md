@@ -17,6 +17,7 @@ Regular intended configuration is as a list of backgroundColors with the gridLin
 
 The following example would give you alternating grey and white background for an x-axis:
 
+<pre>
 options: {
    scales: {
       xAxes: [{
@@ -27,5 +28,7 @@ options: {
       }]
    }
 }
+</pre>
+
 
 The option backgroundColorRepeat: true makes the plugin repeat the sepcified background colors. If set to false in this example, it would only color the first two gridline backgrounds.
