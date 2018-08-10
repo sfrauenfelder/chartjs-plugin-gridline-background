@@ -14,7 +14,9 @@ The gridlines already had configurable foreground colors, and this plugin comple
 
 <strong>Tested with</strong> Chart.js 2.7.2, and only with linear, time and category axes. Might work with logarithmic. Expected to fail with other type axes.
 <h2>Installation</h2>
-Download and save in your project. I don't have a minified version, and it's just one file.
+Download or link to
+https://rawgit.com/sfrauenfelder/chartjs-plugin-gridline-background/master/chartjs-plugin-gridline-background.js
+I don't have a minified version, and it's just one file.
 Include into your html, after Chart.js.
 
 <h2>Configuration</h2>
