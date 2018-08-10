@@ -5,7 +5,7 @@ Plugin for <a href="http://www.chartjs.org/">Chart.js</a> to display colored bac
 This plugin fills the background of each gridline with configurable colors. Actually, it fills each space _between_ two gridlines.
 The gridlines already had configurable foreground colors, and this plugin completes that function with background colors.
 
-<img src="https://rawgit.com/sfrauenfelder/chartjs-plugin-gridline-background/master/demo-picture.png" style="width:200px;">
+<img src="https://rawgit.com/sfrauenfelder/chartjs-plugin-gridline-background/master/demo-picture-all.png" style="width:200px;">
 
 <strong>Tested with</strong> Chart.js 2.7.2, and only with linear, time and category axes. Might work with logarithmic. Expected to fail with other type axes.
 <h2>Installation</h2>
